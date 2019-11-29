@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'restaurants_finder',
+    'order_food',
     'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Restaurants.urls'
+ROOT_URLCONF = 'FoodOrderManagementApp.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Restaurants.wsgi.application'
+WSGI_APPLICATION = 'FoodOrderManagementApp.wsgi.application'
 
 
 # Database
