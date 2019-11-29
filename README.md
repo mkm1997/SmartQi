@@ -13,23 +13,23 @@ userid = m
 pass = m
 5.For getting Restaurant wise sales make the POST request on 
 ` http://127.0.0.1:8000/api/rest_wise_sale/`
-Request body :
+## Request body :
     `{
     "restaurantid":"tuckshop",
     "date":"21-10-2019"
     }`
-Response :
+## Response :
     `{
     "total_sales": 1400
     }`
 6.For getting ​ Is a particular requested item available currently. And further, for the provided date how many items are sold.
 `http://127.0.0.1:8000/api/​ item_available​ /`
-Request body :
+## Request body :
     `{
     "itemname":"idli",
     "date":"21-10-2019"
     }`
-Response :
+## Response :
     `{
     "result": "Item Available",
     "quantity_sold": 34
@@ -39,12 +39,12 @@ List out top 5 most ordered/ trending items for a given restaurant
 - of the day
 - per slots
 `http://127.0.0.1:8000/api/slot /`
-Request body :
+## Request body :
     `{
     "restaurantid":"tuckshop",
     "date": "21-10-2019"
     }`
-Response :
+## Response :
     `{
     "top_5_most_sold_item_for_the_day": {
     "set dosa": 2,
@@ -79,9 +79,9 @@ Response :
     }}`
 8. For Dump all the orders of a day of a restaurant into a csv file
 ` http://127.0.0.1:8000/api/dump_order/`
-Request body :
+## Request body :
     `{
     "restaurantid":"tuckshop",
     "date":"21-10-2019"
     }`
-Response : The csv file will be downloaded
+## Response : The csv file will be downloaded
